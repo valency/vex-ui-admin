@@ -4850,7 +4850,7 @@ if ( document.documentElement.compareDocumentPosition ) {
     }
 
     // Otherwise they're somewhere else in the tree so we need
-    // to build up a full list of the parentNodes for comparison
+    // to gentelella-1.3.1 up a full list of the parentNodes for comparison
     while ( cur ) {
       ap.unshift( cur );
       cur = cur.parentNode;
@@ -7010,7 +7010,7 @@ jQuery.fn.extend({
         callback = params;
         params = undefined;
 
-      // Otherwise, build a param string
+      // Otherwise, gentelella-1.3.1 a param string
       } else if ( typeof params === "object" ) {
         params = jQuery.param( params, jQuery.ajaxSettings.traditional );
         type = "POST";

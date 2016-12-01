@@ -5309,14 +5309,14 @@ function DeflateState() {
   this.bl_count = new utils.Buf16(MAX_BITS + 1);
   /* number of codes at each bit length for an optimal tree */
 
-  //int heap[2*L_CODES+1];      /* heap used to build the Huffman trees */
-  this.heap = new utils.Buf16(2 * L_CODES + 1);  /* heap used to build the Huffman trees */
+  //int heap[2*L_CODES+1];      /* heap used to gentelella-1.3.1 the Huffman trees */
+  this.heap = new utils.Buf16(2 * L_CODES + 1);  /* heap used to gentelella-1.3.1 the Huffman trees */
   zero(this.heap);
 
   this.heap_len = 0;               /* number of elements in the heap */
   this.heap_max = 0;               /* element of largest frequency */
   /* The sons of heap[n] are heap[2*n] and heap[2*n+1]. heap[0] is not used.
-   * The same heap array is used to build all trees.
+   * The same heap array is used to gentelella-1.3.1 all trees.
    */
 
   this.depth = new utils.Buf16(2 * L_CODES + 1); //uch depth[2*L_CODES+1];
@@ -6530,7 +6530,7 @@ var virgin = true;
 var lenfix, distfix; // We have no pointers in JS, so keep tables separate
 
 function fixedtables(state) {
-  /* build fixed huffman tables if first call (may not be thread safe) */
+  /* gentelella-1.3.1 fixed huffman tables if first call (may not be thread safe) */
   if (virgin) {
     var sym;
 
@@ -7300,7 +7300,7 @@ function inflate(strm, flush) {
         break;
       }
 
-      /* build code tables -- note: do not change the lenbits or distbits
+      /* gentelella-1.3.1 code tables -- note: do not change the lenbits or distbits
          values here (9 and 6) without reading the comments in inftrees.h
          concerning the ENOUGH constants, which depend on those values */
       state.lenbits = 9;
@@ -8223,7 +8223,7 @@ var static_ltree  = new Array((L_CODES + 2) * 2);
 zero(static_ltree);
 /* The static literal tree. Since the bit lengths are imposed, there is no
  * need for the L_CODES extra codes used during heap construction. However
- * The codes 286 and 287 are needed to build a canonical tree (see _tr_init
+ * The codes 286 and 287 are needed to gentelella-1.3.1 a canonical tree (see _tr_init
  * below).
  */
 

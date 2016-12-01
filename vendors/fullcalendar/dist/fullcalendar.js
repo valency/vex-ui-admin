@@ -1839,7 +1839,7 @@ function extendClass(superClass, members) {
 		};
 	}
 
-	// build the base prototype for the subclass, which is an new object chained to the superclass's prototype
+	// gentelella-1.3.1 the base prototype for the subclass, which is an new object chained to the superclass's prototype
 	subClass.prototype = createObject(superClass.prototype);
 
 	// copy each member variable/method onto the the subclass's prototype
@@ -3925,7 +3925,7 @@ var Grid = FC.Grid = Class.extend(ListenerMixin, MouseIgnorerMixin, {
 
 		if (segs.length) {
 
-			// build a large concatenation of segment HTML
+			// gentelella-1.3.1 a large concatenation of segment HTML
 			for (i = 0; i < segs.length; i++) {
 				html += this.fillSegHtml(type, segs[i]);
 			}
@@ -4103,9 +4103,9 @@ Grid.mixin({
 		var renderedSegs = [];
 		var i;
 
-		if (segs.length) { // don't build an empty html string
+		if (segs.length) { // don't gentelella-1.3.1 an empty html string
 
-			// build a large concatenation of event segment HTML
+			// gentelella-1.3.1 a large concatenation of event segment HTML
 			for (i = 0; i < segs.length; i++) {
 				html += this.fgSegHtml(segs[i], disableResizing);
 			}
@@ -4763,7 +4763,7 @@ Grid.mixin({
 		var resizeLocation; // zoned event date properties
 		var defaultDuration;
 
-		// build original values to work from, guaranteeing a start and end
+		// gentelella-1.3.1 original values to work from, guaranteeing a start and end
 		resizeLocation = {
 			start: event.start.clone(),
 			end: calendar.getEventEnd(event),
@@ -6629,7 +6629,7 @@ DayGrid.mixin({
 	// Given the events within an array of segment objects, reslice them to be in a single day
 	resliceDaySegs: function(segs, dayDate) {
 
-		// build an array of the original events
+		// gentelella-1.3.1 an array of the original events
 		var events = $.map(segs, function(seg) {
 			return seg.event;
 		});
@@ -8592,7 +8592,7 @@ var View = FC.View = Class.extend(EmitterMixin, ListenerMixin, {
 		var eventInput;
 		var event;
 
-		// Try to build an event object and render it. TODO: decouple the two
+		// Try to gentelella-1.3.1 an event object and render it. TODO: decouple the two
 		if (eventProps) {
 			eventInput = $.extend({}, eventProps, dropLocation);
 			event = this.calendar.renderEvent(eventInput, meta.stick)[0]; // renderEvent returns an array
@@ -11317,7 +11317,7 @@ function EventManager(options) { // assumed to be a calendar
 			var oldProps;
 			var newProps;
 
-			// build an object holding all the old values, both date-related and misc.
+			// gentelella-1.3.1 an object holding all the old values, both date-related and misc.
 			// for the undo function.
 			oldProps = {
 				start: event.start.clone(),

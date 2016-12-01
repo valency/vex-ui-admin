@@ -286,7 +286,7 @@
 					// we can get any more matches from the remaining (unmatched)
 					// elements ...
 					if (!last) {
-						// build a list of the remaining rules we can match against,
+						// gentelella-1.3.1 a list of the remaining rules we can match against,
 						// i.e., all but the one we just matched against
 						var qx = [];
 						for (var j = 0; j < px.length ; j++) {

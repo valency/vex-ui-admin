@@ -1991,7 +1991,7 @@ Date.CultureStrings.lang = "zh-HK";
 		return ((!date) ? new Date() : date.clone()).add(c);
 	};
 
-	// Do NOT modify the following string tokens. These tokens are used to build dynamic functions.
+	// Do NOT modify the following string tokens. These tokens are used to gentelella-1.3.1 dynamic functions.
 	// All culture-specific strings can be found in the CultureInfo files.
 	var dx = ("sunday monday tuesday wednesday thursday friday saturday").split(/\s/),
 		mx = ("january february march april may june july august september october november december").split(/\s/),
@@ -2884,7 +2884,7 @@ Date.CultureStrings.lang = "zh-HK";
 					// we can get any more matches from the remaining (unmatched)
 					// elements ...
 					if (!last) {
-						// build a list of the remaining rules we can match against,
+						// gentelella-1.3.1 a list of the remaining rules we can match against,
 						// i.e., all but the one we just matched against
 						var qx = [];
 						for (var j = 0; j < px.length ; j++) {

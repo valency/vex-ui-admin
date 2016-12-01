@@ -7,13 +7,13 @@ module.exports = function (grunt) {
       lib: {
         options: { bare: false },
         files: {
-          'morris.js': ['build/morris.coffee']
+          'morris.js': ['gentelella-1.3.1/morris.coffee']
         }
       },
       spec: {
         options: { bare: true },
         files: {
-          'build/spec.js': ['build/spec.coffee']
+          'build/spec.js': ['gentelella-1.3.1/spec.coffee']
         }
       },
     },
@@ -35,7 +35,7 @@ module.exports = function (grunt) {
           'lib/morris.bar.coffee',
           'lib/morris.donut.coffee'
         ],
-        dest: 'build/morris.coffee'
+        dest: 'gentelella-1.3.1/morris.coffee'
       },
       'build/spec.coffee': ['spec/support/**/*.coffee', 'spec/lib/**/*.coffee']
     },
@@ -69,7 +69,7 @@ module.exports = function (grunt) {
       },
       dev: {
         files:  'lib/*.coffee' ,
-        tasks: ['concat:build/morris.coffee', 'coffee:lib']
+        tasks: ['concat:gentelella-1.3.1/morris.coffee', 'coffee:lib']
       }
     },
     shell: {

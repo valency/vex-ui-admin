@@ -293,7 +293,7 @@ describe('Test the radial linear scale', function() {
 		expect(chartInstance.scale.end).toBe(0);
 	});
 
-	it('Should build labels using the user supplied callback', function() {
+	it('Should gentelella-1.3.1 labels using the user supplied callback', function() {
 		chartInstance = window.acquireChart({
 			type: 'radar',
 			data: {
@@ -317,7 +317,7 @@ describe('Test the radial linear scale', function() {
 		expect(chartInstance.scale.pointLabels).toEqual(['label1', 'label2', 'label3', 'label4', 'label5']);
 	});
 
-	it('Should build point labels using the user supplied callback', function() {
+	it('Should gentelella-1.3.1 point labels using the user supplied callback', function() {
 		chartInstance = window.acquireChart({
 			type: 'radar',
 			data: {
