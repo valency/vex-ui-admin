@@ -36,32 +36,33 @@ function login() {
 
 function register() {
     var username = $("#username").val();
-    var password = CryptoJS.MD5($("#password").val()).toString();
-    $.ajax({
-        type: "POST",
-        url: API_SERVER + "auth/register/",
-        data: {
-            username: username,
-            password: password
-        },
-        success: function (data) {
-            bootbox.alert(success_message("注册成功！"));
-        },
-        error: function (xhr, ajaxOptions, thrownError) {
+    var password = $("#password").val();
+    if (!is_empty(username) && !is_empty(password)) {
+        $.ajax({
+            type: "POST",
+            url: API_SERVER + "auth/register/",
+            data: {
+                username: username,
+                password: CryptoJS.MD5(password).toString()
+            },
+            dataType: "json"
+        }).always(function (xhr) {
             switch (xhr.status) {
                 case 201:
-                    bootbox.alert(success_message("注册成功！"));
+                    var msg = success_message("注册成功！");
                     break;
                 case 406:
-                    bootbox.alert(error_message("用户名或密码为空或不符合要求！"));
+                    msg = error_message("注册失败：用户名或密码不符合要求！");
                     break;
                 case 409:
-                    bootbox.alert(error_message("用户已存在！"));
+                    msg = error_message("注册失败：用户已存在！");
                     break;
                 default:
-                    bootbox.alert(error_message("服务器无响应！"));
+                    msg = error_message("注册失败：服务器无响应！");
             }
-        },
-        dataType: "json"
-    });
+            bootbox.alert(msg);
+        });
+    } else {
+        bootbox.alert(error_message("注册失败：用户名或密码不能为空！"));
+    }
 }

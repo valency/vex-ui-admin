@@ -1,9 +1,5 @@
 body, h1, h2, h3, h4, h5, h6 {
-    font-family: "Hiragino Sans GB", "Microsoft YaHei UI", "Microsoft YaHei", "微软雅黑", sans-serif;
-}
-
-body {
-    background: transparent;
+    font-family: "Segoe UI", "Hiragino Sans GB", "Microsoft YaHei UI", "Microsoft YaHei", "微软雅黑", sans-serif;
 }
 
 body::-webkit-scrollbar {
@@ -27,4 +23,15 @@ body::-webkit-scrollbar {
 
 .bootbox-close-button {
     margin-top: 0 !important;
+}
+
+.site_title > span {
+    font-size: 18px;
+}
+
+.site_title > span > img {
+    height: 24px;
+    -webkit-filter: invert(1);
+    filter: invert(1);
+    margin-right: 5px;
 }

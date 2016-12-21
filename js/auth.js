@@ -1,12 +1,12 @@
 function check_login(callback) {
     if (is_empty(Cookies.get('vex_username'))) {
-        window.location.href = "login.php";
+        location.href = "login.php";
     } else {
         $.get(API_SERVER + "auth/detail/", function (data) {
             $(".username").html(data["username"]);
             if (callback) callback(data);
         }).fail(function () {
-            window.location.href = "login.php";
+            location.href = "login.php";
         });
     }
 }
@@ -14,7 +14,7 @@ function check_login(callback) {
 function logout() {
     Cookies.remove("vex_username");
     Cookies.remove("vex_ticket");
-    window.location.href = "index.php";
+    location.href = "index.php";
 }
 
 function change_password() {
