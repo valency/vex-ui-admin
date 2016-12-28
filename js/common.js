@@ -20,7 +20,7 @@ function warning_message(msg) {
 }
 
 function loading_message(msg) {
-    return "<span class='text-info'><i class='fa fa-spinner'></i> " + msg + "</span>";
+    return "<span class='text-info'><i class='fa fa-spin fa-spinner'></i> " + msg + "</span>";
 }
 
 function get_url_parameter(p) {
