@@ -1,3 +1,12 @@
+Number.prototype.comma = function () {
+    return this.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+};
+
+Number.prototype.comma2 = function () {
+    return this.toFixed(2).replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+};
+
+
 function success_message(msg) {
     return "<span class='text-success'><i class='fa fa-check-circle'></i> " + msg + "</span>";
 }
@@ -57,3 +66,4 @@ function convert_django_time(t) {
 function is_empty(s) {
     return s == undefined || s == null || s == "";
 }
+

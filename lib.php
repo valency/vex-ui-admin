@@ -8,7 +8,6 @@
 
 <link rel="stylesheet" type="text/css" href="lib/font-awesome-4.7.0/css/font-awesome.min.css"/>
 <link rel="stylesheet" type="text/css" href="lib/bootstrap-3.3.7/dist/css/bootstrap.min.css"/>
-<link rel="stylesheet" type="text/css" href="lib/datatables-1.10.12/media/css/jquery.dataTables.min.css"/>
 <link rel="stylesheet" type="text/css" href="lib/datatables-1.10.12/media/css/dataTables.bootstrap.min.css"/>
 <link rel="stylesheet" type="text/css" href="lib/gentelella-1.3.1/css/custom.min.css"/>
 

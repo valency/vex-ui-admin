@@ -35,3 +35,7 @@ body::-webkit-scrollbar {
     filter: invert(1);
     margin-right: 5px;
 }
+
+.x_title {
+    margin-top: 60px;
+}

@@ -8,13 +8,8 @@
             <div class="menu_section">
                 <ul class="nav side-menu">
                     <li><a href="dashboard.php"><i class="fa fa-home"></i> 概览</a></li>
+                    <li><a href="stock.php"><i class="fa fa-suitcase"></i> 交易目录管理</a></li>
                     <li><a href="user.php"><i class="fa fa-user"></i> 用户管理</a></li>
-                    <li><a><i class="fa fa-clone"></i>Layouts <span class="fa fa-chevron-down"></span></a>
-                        <ul class="nav child_menu">
-                            <li><a href="fixed_sidebar.html">Fixed Sidebar</a></li>
-                            <li><a href="fixed_footer.html">Fixed Footer</a></li>
-                        </ul>
-                    </li>
                 </ul>
             </div>
         </div>
