@@ -1,5 +1,5 @@
 var API_SERVER = "/api/vex/";
-var USER_GROUP = ["普通用户", "管理员"];
+var USER_GROUP = ["普通用户", "管理员", "经纪人"];
 var DT_LANG = {
     "sProcessing": "处理中...",
     "sLengthMenu": "显示 _MENU_ 项结果",
